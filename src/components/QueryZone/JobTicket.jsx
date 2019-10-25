@@ -10,8 +10,8 @@ const JobTicket = ({
   handleClick
 }) => (
   <div className="ticket" onClick={() => handleClick(jobSlug, companySlug)}>
-    <div className="ticket-job-text">{title}</div>
-    <div className="ticket-company-text">{companyName}</div>
+    <p className="ticket-job-text">{title}</p>
+    <p className="ticket-company-text">{companyName}</p>
   </div>
 );
 

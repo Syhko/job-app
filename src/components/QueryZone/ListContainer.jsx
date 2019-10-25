@@ -21,6 +21,7 @@ const QueryContainer = ({ handleClick }) => {
                   title={job.title}
                   jobSlug={job.slug}
                   companySlug={job.company.slug}
+                  cities={job.cities}
                   companyName={job.company.name}
                   handleClick={(...rest) => handleClick(rest)}
                 />
