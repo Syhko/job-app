@@ -1,0 +1,30 @@
+.header {
+  grid-area: header;
+  background-color: #3c67c9;
+  display: flex;
+}
+
+.title {
+  margin: auto 20px;
+  font-size: 34px;
+  font-weight: 400;
+  color: white;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #3c67c9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.credits {
+  font-size: 20px;
+  margin: auto;
+  color: white;
+}
+
+a {
+  color: #fff;
+}
