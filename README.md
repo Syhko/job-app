@@ -3,3 +3,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 A simple one page app, powered by React, GraphQL open API https://api.graphql.jobs/
 
 Made with scss, css grids, react apollo.
+
+You can see the demo [here](https://syhko-job-app.netlify.com)
