@@ -3,7 +3,7 @@ import "./style.scss";
 import Description from "./Description";
 import { Query } from "react-apollo";
 import { JOB } from "./graphql";
-import JobLoader from "../loaders/JobLoader";
+import JobLoader from "../../components/loaders/JobLoader";
 
 const QueryContainer = ({ companySlug, jobSlug }) => (
   <Query

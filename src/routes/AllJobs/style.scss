@@ -1,0 +1,8 @@
+.container {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: 0vh 100vh 0vh;
+  grid-template-areas:
+    "list desc desc desc"
+    "footer footer footer footer";
+}

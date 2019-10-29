@@ -1,7 +1,7 @@
 import * as React from "react";
 import "./style.scss";
 import Markdown from "react-markdown";
-import ApplyButton from "../snippets/ApplyButton";
+import ApplyButton from "../../components/ApplyButton";
 
 const Description = ({ title, companyName, description, applyUrl }) => (
   <div className="desc">

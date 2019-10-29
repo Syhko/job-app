@@ -1,8 +1,8 @@
 import gql from "graphql-tag";
 
 export const JOBS = gql`
-  query jobs {
-    jobs {
+  query jobs($input: JobsInput!) {
+    jobs(input: $input) {
       id
       title
       slug
@@ -10,12 +10,17 @@ export const JOBS = gql`
         id
         name
         slug
+        logoUrl
       }
       cities {
         id
         name
       }
       remotes {
+        id
+        name
+      }
+      countries {
         id
         name
       }

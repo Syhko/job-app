@@ -1,0 +1,86 @@
+.gradient {
+  background-image: linear-gradient(to bottom right, #83e1ff53, #bc4da450);
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+}
+
+.title-logo {
+  width: 150px;
+}
+
+.main-title {
+  font-size: 37px;
+  font-weight: 800;
+  margin: auto;
+  text-align: center;
+}
+
+.middle-box {
+  position: relative;
+  top: -5vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 60vw;
+  box-shadow: 0px 0px 10px #555;
+  background-color: #fff;
+}
+
+.job-ad-wrapper {
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.job-ad-wrapper:hover {
+  background-color: #ccc;
+}
+
+.left-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0px;
+  font-size: 20px;
+  text-align: center;
+  width: 60%;
+}
+
+.job-title {
+  font-weight: 600;
+}
+
+.company-name {
+  color: #555;
+  margin-top: 5px;
+}
+
+.right-wrapper {
+  display: flex;
+  margin: auto 0px;
+  justify-content: flex-end;
+  font-size: 18px;
+  width: 30%;
+}
+
+.job-ad-img {
+  width: 70px;
+  height: 70px;
+  margin: auto 0px;
+}
+
+.footer-wrapper {
+  background-image: linear-gradient(to bottom right, #83e1ff53, #bc4da450);
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-content {
+  margin: auto 0px;
+  font-size: 20px;
+  color: #555;
+}

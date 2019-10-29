@@ -1,9 +1,10 @@
 import * as React from "react";
 import "./style.scss";
+import "../Navigation/favicon.png";
 
 const JobLoader = () => (
   <div className="job-loader-wrapper">
-    <div className="description-loader" />
+    <img src="favicon.png" className="description-loader" />
   </div>
 );
 
