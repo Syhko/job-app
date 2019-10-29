@@ -2,9 +2,10 @@ import React from "react";
 import "./style.scss";
 import "../../components/Navigation/favicon.png";
 import { Query } from "react-apollo";
-import { JOBS } from "../QueryZone/graphql";
+import { JOBS } from "../AllJobs/graphql";
 import JobAd from "./JobAd";
 import TopNav from "../../components/Navigation/TopNav";
+import Footer from "../../components/Navigation/Footer";
 import JobLoader from "../../components/loaders/JobLoader";
 
 const Home = () => {
@@ -35,6 +36,9 @@ const Home = () => {
               <>
                 {jobs.map(job => (
                   <JobAd
+                    key={job.id}
+                    id={job.id}
+                    jobSlug={job.slug}
                     title={job.title}
                     company={job.company}
                     cities={job.cities}
@@ -46,10 +50,7 @@ const Home = () => {
           }}
         </Query>
       </div>
-      <div className="footer-wrapper">
-        <div className="footer-content">Powered by React and GraphQL API</div>
-        <div className="footer-content">Made by Syhko</div>
-      </div>
+      <Footer />
     </div>
   );
 };
