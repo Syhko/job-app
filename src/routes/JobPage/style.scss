@@ -1,0 +1,51 @@
+.job-page-container {
+  position: relative;
+}
+
+.job-page-link-back {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.leaning-banner {
+  height: 40vh;
+  clip-path: polygon(0 0, 0 100%, 100% calc(100% - 20vh), 100% 0%);
+  background-image: linear-gradient(to bottom right, #83e1ff53, #bc4da450);
+}
+
+.polygon {
+  position: absolute;
+  clip-path: polygon(0 0, 0 100%, 100% 20%, 0 0);
+  transform: rotate(-30deg);
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to bottom right, #83e1ff53, #bc4da450);
+  right: 10vw;
+  top: 10vh;
+}
+
+.job-page-title {
+  font-size: 3em;
+  font-weight: 600;
+  color: #333;
+  padding: 0.5em;
+}
+
+.job-page-company {
+  font-size: 2em;
+  font-weight: 600;
+  color: #444;
+  padding: 0.5em;
+}
+
+.job-page-description {
+  width: 80vw;
+  margin: 0px 20px 0px auto;
+  font-size: 18px;
+  color: #444;
+}

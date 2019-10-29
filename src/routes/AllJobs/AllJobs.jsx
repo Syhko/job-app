@@ -2,8 +2,8 @@ import React from "react";
 import "./style.scss";
 import Footer from "../../components/Navigation/Footer";
 import TopNav from "../../components/Navigation/TopNav";
-import ListContainer from "../QueryZone/ListContainer";
-import DescriptionContainer from "../QueryZone/DescriptionContainer";
+import ListContainer from "./ListContainer";
+import DescriptionContainer from "./DescriptionContainer";
 
 const AllJobs = () => {
   const [queryParams, setQueryParams] = React.useState([null, null]);
@@ -19,10 +19,7 @@ const AllJobs = () => {
           />
         )}
       </div>
-      <div className="footer-wrapper">
-        <div className="footer-content">Powered by React and GraphQL API</div>
-        <div className="footer-content">Made by Syhko</div>
-      </div>
+      <Footer />
     </>
   );
 };
