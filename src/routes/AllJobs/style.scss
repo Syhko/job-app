@@ -6,3 +6,99 @@
     "list desc desc desc"
     "footer footer footer footer";
 }
+
+.list {
+  grid-area: list;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: auto;
+}
+
+.desc {
+  grid-area: desc;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: auto;
+}
+
+.ticket {
+  height: 5em;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee50;
+  cursor: pointer;
+  @media screen and (max-width: 700px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 15px;
+  }
+}
+
+.ticket:hover {
+  box-shadow: 0px 0px 5px black;
+}
+
+%ticket-text {
+  margin: auto 10px;
+  color: #444;
+}
+
+.ticket-job-text {
+  @extend %ticket-text;
+}
+
+.ticket-company-text {
+  @extend %ticket-text;
+  font-weight: bold;
+}
+
+.job-title {
+  font-size: 25px;
+  color: #555;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.job-company-title {
+  font-size: 21px;
+  color: #333;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.job-description {
+  color: #666;
+  margin: 30px;
+  line-height: 1.5em;
+}
+
+.save-button-wrapper {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-wrapper {
+  width: 98%;
+  height: 2.5em;
+  position: sticky;
+  top: 0px;
+}
+
+.search-input {
+  border: 1px solid #888;
+  width: 100%;
+  height: 100%;
+  padding-left: 0.3em;
+  font-size: 15px;
+}
+
+.search-input:focus {
+  outline: none;
+}
