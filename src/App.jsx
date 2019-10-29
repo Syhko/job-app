@@ -2,28 +2,20 @@ import React from "react";
 import "./App.scss";
 import { ApolloProvider } from "@apollo/react-hooks";
 import client from "./client";
-import Footer from "./components/Navigation/Footer";
-import TopNav from "./components/Navigation/TopNav";
-import ListContainer from "./components/QueryZone/ListContainer";
-import DescriptionContainer from "./components/QueryZone/DescriptionContainer";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import AllJobs from "./routes/AllJobs/AllJobs";
+import Home from "./routes/Home/Home";
 
 const App = () => {
-  const [queryParams, setQueryParams] = React.useState([null, null]);
-  console.log(queryParams);
   return (
-    <ApolloProvider client={client}>
-      <div className="container">
-        <TopNav />
-        <ListContainer handleClick={(...rest) => setQueryParams(rest[0])} />
-        {queryParams[0] !== null && (
-          <DescriptionContainer
-            companySlug={queryParams[1]}
-            jobSlug={queryParams[0]}
-          />
-        )}
-        <Footer />
-      </div>
-    </ApolloProvider>
+    <>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/allJobs" component={AllJobs} />
+        </Switch>
+      </BrowserRouter>
+    </>
   );
 };
 
