@@ -2,16 +2,6 @@
   position: relative;
 }
 
-.job-page-link-back {
-  position: absolute;
-  top: 1vh;
-  right: 1vw;
-  text-decoration: none;
-  color: #333;
-  cursor: pointer;
-  z-index: 10;
-}
-
 .leaning-banner {
   height: 40vh;
   clip-path: polygon(0 0, 0 100%, 100% calc(100% - 20vh), 100% 0%);
@@ -37,7 +27,7 @@
 }
 
 .job-page-company {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 600;
   color: #444;
   padding: 0.5em;
