@@ -84,3 +84,58 @@
 .footer-link {
   color: #fff;
 }
+
+.side-bar {
+  position: fixed;
+  width: 10rem;
+  height: 30rem;
+  background: #fff;
+  top: 10rem;
+  left: -11rem;
+  transition: 300ms ease-in-out;
+  border-radius: 20px;
+  border: 5px solid #555;
+  z-index: 10;
+  display: flex;
+}
+
+.side-bar:hover {
+  left: 0.3rem;
+}
+
+.side-bar::before {
+  content: "";
+  text-align: center;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  font-size: 20px;
+  position: absolute;
+  width: 8rem;
+  height: 8rem;
+  background: #555;
+  border-radius: 50%;
+  top: 3rem;
+  right: -4rem;
+  transition: 200ms ease-in;
+  transition-delay: 0ms;
+  transition-property: opacity;
+  z-index: -1;
+}
+
+.side-bar:hover::before {
+  opacity: 0;
+}
+
+.side-bar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 60%;
+  margin: auto 0px;
+}
+
+.side-bar-link {
+  text-decoration: none;
+  color: #555;
+  margin: auto;
+}

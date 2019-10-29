@@ -5,16 +5,13 @@ import { JOB } from "../AllJobs/graphql";
 import Markdown from "react-markdown";
 import Footer from "../../components/Navigation/Footer";
 import { Link } from "react-router-dom";
-
+import SlideBar from "../../components/Navigation/SlideBar";
 const JobPage = ({ ...props }) => {
   const { companySlug, jobSlug } = props.location.state;
-  console.log(companySlug);
 
   return (
     <div className="job-page-container">
-      <Link className="job-page-link-back" to="/">
-        Back
-      </Link>
+      <SlideBar />
       <Query
         query={JOB}
         variables={{
