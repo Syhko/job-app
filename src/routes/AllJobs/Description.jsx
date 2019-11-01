@@ -5,10 +5,10 @@ import ApplyButton from "../../components/ApplyButton";
 
 const Description = ({ title, companyName, description, applyUrl }) => (
   <div className="desc">
-    <div className="save-button-wrapper">
+    <div className="apply-button-wrapper">
       <ApplyButton applyUrl={applyUrl} />
     </div>
-    <div className="job-title">{title}</div>
+    <div className="job-title-desc">{title}</div>
     <div className="job-company-title">{companyName}</div>
     <Markdown source={description} className="job-description" />
     <div className="job-description"></div>

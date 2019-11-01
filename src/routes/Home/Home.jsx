@@ -6,12 +6,14 @@ import { JOBS } from "../AllJobs/graphql";
 import JobAd from "./JobAd";
 import TopNav from "../../components/Navigation/TopNav";
 import Footer from "../../components/Navigation/Footer";
+import SlideBar from "../../components/Navigation/SlideBar";
 import JobLoader from "../../components/loaders/JobLoader";
 
 const Home = () => {
   return (
     <div>
       <TopNav />
+      <SlideBar />
       <div className="gradient">
         <div className="main-title">Find a job. Work with GraphQL!</div>
       </div>

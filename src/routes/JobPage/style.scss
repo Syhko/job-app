@@ -20,17 +20,29 @@
 }
 
 .job-page-title {
-  font-size: 3em;
   font-weight: 600;
   color: #333;
-  padding: 0.5em;
+  @media screen and (max-width: 600px) {
+    font-size: 1.5em;
+    padding: 1em;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 3em;
+    padding: 0.5em;
+  }
 }
 
 .job-page-company {
-  font-size: 2.5em;
   font-weight: 600;
   color: #444;
-  padding: 0.5em;
+  @media screen and (max-width: 600px) {
+    font-size: 1.5em;
+    padding: 1em;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 2.5em;
+    padding: 0.5em;
+  }
 }
 
 .job-page-description {

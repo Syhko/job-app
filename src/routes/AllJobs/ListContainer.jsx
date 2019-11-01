@@ -14,7 +14,7 @@ const QueryContainer = ({ handleClick }) => {
       <div className="input-wrapper">
         <input
           className="search-input"
-          placeholder="Look for a job..."
+          placeholder="Search..."
           onChange={e => setQuery(e.target.value)}
         />
       </div>
