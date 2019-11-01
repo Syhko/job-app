@@ -1,10 +1,10 @@
+import { ApolloProvider } from "react-apollo";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import client from "./client";
-import { ApolloProvider } from "react-apollo";
 
 const Routes = () => {
   return (

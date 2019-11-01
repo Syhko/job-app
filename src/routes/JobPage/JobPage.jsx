@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 import SlideBar from "../../components/Navigation/SlideBar";
 const JobPage = ({ ...props }) => {
   const { companySlug, jobSlug } = props.location.state;
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="job-page-container">
